@@ -7,6 +7,10 @@ import org.openqa.selenium.WebElement;
 public class LoginPage {
     WebDriver driver;
 
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
     public void clickButtonEnter() {
         By buttonEnterBy = By.xpath(LoginPageXPath.BUTTON_ENTER_XPATH);
         WebElement buttonEnterWebElement = driver.findElement(buttonEnterBy);
